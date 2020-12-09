@@ -11,5 +11,14 @@ import "../styles/index.scss";
 //import your own components
 import Layout from "./layout";
 
+// import { CookiesProvider } from 'react-cookie';
+// const withCookies = () => {
+//     return (
+//         <CookiesProvider>
+//             <Layout />
+//         </CookiesProvider>
+//     )
+// }
+
 //render your react application
 ReactDOM.render(<Layout />, document.querySelector("#app"));

@@ -8,6 +8,8 @@ import "../../styles/demo.scss";
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
+	console.log(actions.getUserID());
+
 	return (
 		<div className="container">
 			<ul className="list-group">
@@ -38,6 +40,9 @@ export const Demo = () => {
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
 			</Link>
+			<button className="btn btn-success" onClick={() => actions.setUserID("321")}>
+				Change user ID
+			</button>
 		</div>
 	);
 };
